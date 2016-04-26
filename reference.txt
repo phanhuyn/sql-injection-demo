@@ -1,0 +1,9 @@
+More examples: 
+http://www.slideshare.net/billkarwin/sql-injection-myths-and-fallacies
+http://blog.checkpoint.com/2015/05/07/latest-sql-injection-trends/
+
+Guessing the database schema:
+http://www.unixwiz.net/techtips/sql-injection.html
+
+Hall-of-shame: 
+http://codecurmudgeon.com/wp/sql-injection-hall-of-shame/ 
